@@ -34,23 +34,23 @@ public class OneOfEachStats {
 			boolean boyBorned = false; 
 			boolean girlBorned = false;
 			int children = 0;
-			String genders = "";
+			// String genders = "";
 			while(!boyBorned || !girlBorned) {
 				// double gender = Math.random();
 				double rnd = generator.nextDouble();
 				if(rnd < 0.5) {
-					genders += "b ";
+					// genders += "b ";
 					boyBorned = true;
 				} else {
-					genders += "g ";
+					// genders += "g ";
 					girlBorned = true;
 				}
 				children++;
 				totalNumOfChildren++;
 			}
 
-			System.out.println(genders);
-			System.out.println("You made it... and you now have " + children + " children.");
+			// System.out.println(genders);
+			// System.out.println("You made it... and you now have " + children + " children.");
 
 			if(children == 2) {
 				twoChildren++;
